@@ -1,0 +1,48 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{0BA6C6CB-5C4C-4E9D-A4EA-50362C904A6D}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="S3.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="..\test\S3.Tests.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="S3">
+        <MSBuild Projects="S3.dproj"/>
+    </Target>
+    <Target Name="S3:Clean">
+        <MSBuild Projects="S3.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="S3:Make">
+        <MSBuild Projects="S3.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="S3_Tests">
+        <MSBuild Projects="..\test\S3.Tests.dproj"/>
+    </Target>
+    <Target Name="S3_Tests:Clean">
+        <MSBuild Projects="..\test\S3.Tests.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="S3_Tests:Make">
+        <MSBuild Projects="..\test\S3.Tests.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="S3;S3_Tests"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="S3:Clean;S3_Tests:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="S3:Make;S3_Tests:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>

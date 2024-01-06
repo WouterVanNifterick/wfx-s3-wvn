@@ -1,0 +1,6 @@
+[plugininstall]
+description=S3 plugin 0.9 (32bit+64bit)
+type=wfx
+file=WvN-S3.wfx
+defaultdir=WvN-S3
+version=0.9
