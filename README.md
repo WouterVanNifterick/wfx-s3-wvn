@@ -1,5 +1,4 @@
-# wfx-s3-wvn
-Total commander WFX plugin: S3
+# wfx-s3
 
 [![GitHub releases](https://img.shields.io/github/downloads/woutervannifterick/wfx-s3-wvn/total.svg)](https://github.com/woutervannifterick/wfx-s3-wvn/releases)
 [![Issues open](https://img.shields.io/github/issues/woutervannifterick/wfx-s3-wvn.svg)](https://github.com/woutervannifterick/wfx-s3-wvn/issues)
@@ -7,8 +6,10 @@ Total commander WFX plugin: S3
 [![License](https://img.shields.io/github/license/woutervannifterick/wfx-s3-wvn.svg)](https://github.com/woutervannifterick/wfx-s3-wvn/blob/master/LICENSE)
 
 
-# Description
-This plugin allows you to browse and manage files in your Amazon S3 bucket, via [Total Commander](https://www.ghisler.com/).
+This is a free [Total Commander](https://www.ghisler.com/) FileSystem (WFX) plugin.
+
+It lets you  browse and manage files in your [Amazon S3 buckets](https://aws.amazon.com/s3/).
+
 
 # Features
 
