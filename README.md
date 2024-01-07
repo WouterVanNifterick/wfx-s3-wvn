@@ -14,7 +14,7 @@ This is a free [Total Commander](https://www.ghisler.com/) FileSystem (WFX) plug
 
 It lets you browse and manage files in your [Amazon S3 buckets](https://aws.amazon.com/s3/).
 
-
+Get it here: [Downloads](https://github.com/WouterVanNifterick/wfx-s3-wvn/tags)
 
 #### What is S3?
 S3 is a cloud storage service provided by Amazon Web Services (AWS). 
@@ -43,7 +43,7 @@ And of course, it's awesome being able to browse your S3 buckets from within Tot
 # Installation
 
 ### Prerequisites
-* This plugin. [See downloads](https://github.com/WouterVanNifterick/wfx-s3-wvn/tags)
+* [This plugin](https://github.com/WouterVanNifterick/wfx-s3-wvn/tags)
 * [Total Commander](https://www.ghisler.com/)
 * [An Amazon Web Services (AWS) account](https://aws.amazon.com/). <br>
   *Note: having S3 buckets are optional, as you can create them from within the plugin.*
