@@ -395,7 +395,7 @@ begin
     S3.UploadObject(BucketName, s3Name, [], false, nil, nil, TAmazonACLType.amzbaNotSpecified, res, FRegion );
 
   end;
-  Exit(False);
+  Exit(True);
 end;
 
 function TS3Plugin.PutFile(aLocalName, aRemoteName: String; aCopyFlags: integer): integer;
